@@ -3,13 +3,10 @@ public class Barrier {
 	private State state;
 
 	public void open() {
-		// TODO - implement Barrier.open
-		throw new UnsupportedOperationException();
+		state = State.OPEN;
 	}
 
 	public void close() {
-		// TODO - implement Barrier.close
-		throw new UnsupportedOperationException();
+		state = State.CLOSED;
 	}
-
 }

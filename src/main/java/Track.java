@@ -1,19 +1,23 @@
 public class Track {
-
-	private Track successor;
-
-	public void passBorder() {
-		// TODO - implement Track.passBorder
-		throw new UnsupportedOperationException();
+	private Track successor; //Nachfolger
+	public void passBorder(Vehicle vehicle) {
+		if(getSuccessor() != null){
+			getSuccessor().passBorder(vehicle);
+		}
+		else{
+			System.out.println("Error by passing Border in Track Class. Unable to find correct Track");
+		}
 	}
 
-	/**
-	 * 
-	 * @param vehicle
-	 */
 	public boolean canHandleVehicle(Vehicle vehicle) {
-		// TODO - implement Track.canHandleVehicle
-		throw new UnsupportedOperationException();
+		return true;
 	}
 
+	public Track getSuccessor() {
+		return successor;
+	}
+
+	public void setSuccessor(Track successor) {
+		this.successor = successor;
+	}
 }
