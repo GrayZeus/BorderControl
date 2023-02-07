@@ -9,8 +9,9 @@ public class Track {
 		}
 	}
 
-	public boolean canHandleVehicle(Vehicle vehicle) {
-		return true;
+	public boolean canHandleVehicle(Vehicle vehicle, String vehicleType) {
+		System.out.println("Track class: " + vehicle.getClass().toString());
+		return (vehicle == null) || (vehicle.getClass().toString().equals(vehicleType));
 	}
 
 	public Track getSuccessor() {
