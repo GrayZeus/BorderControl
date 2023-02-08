@@ -7,7 +7,7 @@ public class Transmitter {
 	}
 
 	public void pressButton() {
-		System.out.println("Barrier Button has been pressed!");
+		System.out.println("Transmitter Button has been pressed!");
 		command.execute();
 	}
 }
