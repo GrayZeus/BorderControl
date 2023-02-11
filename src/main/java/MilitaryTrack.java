@@ -6,12 +6,13 @@ public class MilitaryTrack extends Track {
     ICommand barrierOpen = new OpenBarrierCommand(militaryBarrier);
     ICommand barrierClose = new CloseBarrierCommand(militaryBarrier);
 
-    public MilitaryTrack(Track successor){
+    public MilitaryTrack(Track successor) {
         setSuccessor(successor);
     }
-    public void passBorder(Vehicle vehicle){
+
+    public void passBorder(Vehicle vehicle) {
         //System.out.println("Military Track Class: " + vehicle.getClass().toString());
-        if(canHandleVehicle(vehicle, "class MilitaryVehicle")){
+        if (canHandleVehicle(vehicle, "class MilitaryVehicle")) {
             control.setCommand(barrierOpen);
             control.pressButton();
             outputBarrierState();
@@ -19,14 +20,13 @@ public class MilitaryTrack extends Track {
             control.setCommand(barrierClose);
             control.pressButton();
             outputBarrierState();
-        }
-        else{
+        } else {
             super.passBorder(vehicle);
         }
     }
 
 
-    public void outputBarrierState(){
+    public void outputBarrierState() {
         System.out.println(militaryBarrier.toString() + " state: " + militaryBarrier.getState());
     }
 }

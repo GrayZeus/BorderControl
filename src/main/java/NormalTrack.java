@@ -4,9 +4,9 @@ public class NormalTrack extends Track {
 
     Barrier barrierNormalTrack = new Barrier();
 
-    public void passBorder(Vehicle vehicle){
+    public void passBorder(Vehicle vehicle) {
         //System.out.println("Normal Track Class: " + vehicle.getClass().toString());
-        if(canHandleVehicle(vehicle, "class Car")){
+        if (canHandleVehicle(vehicle, "class Car")) {
             System.out.println("Boarder guard is checking for personal documents and checks the vehicle");
             System.out.println("Boarder guard opens the barrier");
             barrierNormalTrack = jeremy.openBarrier(barrierNormalTrack);
@@ -15,13 +15,12 @@ public class NormalTrack extends Track {
             System.out.println("Boarder guard closes the barrier");
             barrierNormalTrack = jeremy.closeBarrier(barrierNormalTrack);
             outputBarrierState();
-        }
-        else{
+        } else {
             super.passBorder(vehicle);
         }
     }
 
-    public void outputBarrierState(){
+    public void outputBarrierState() {
         System.out.println(barrierNormalTrack.toString() + " state: " + barrierNormalTrack.getState());
     }
 }

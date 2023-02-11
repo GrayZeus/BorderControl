@@ -1,5 +1,5 @@
 public interface ICommand {
 
-	void execute();
+    void execute();
 
 }

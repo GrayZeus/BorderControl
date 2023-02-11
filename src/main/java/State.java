@@ -1,4 +1,4 @@
 public enum State {
-	OPEN,
-	CLOSED
+    OPEN,
+    CLOSED
 }

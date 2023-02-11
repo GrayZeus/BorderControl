@@ -6,14 +6,14 @@ public class DiplomatsTrack extends Track {
     ICommand barrierClose = new CloseBarrierCommand(diplomatsBarrier);
 
 
-    public DiplomatsTrack(Track successor){
+    public DiplomatsTrack(Track successor) {
         setSuccessor(successor);
     }
 
 
-    public void passBorder(Vehicle vehicle){
+    public void passBorder(Vehicle vehicle) {
         //System.out.println("Diplomats Track Class: " + vehicle.getClass().toString());
-        if(canHandleVehicle(vehicle, "class DiplomatsVehicle")){
+        if (canHandleVehicle(vehicle, "class DiplomatsVehicle")) {
             control.setCommand(barrierOpen);
             control.pressButton();
             outputBarrierState();
@@ -21,12 +21,12 @@ public class DiplomatsTrack extends Track {
             control.setCommand(barrierClose);
             control.pressButton();
             outputBarrierState();
-        }
-        else{
+        } else {
             super.passBorder(vehicle);
         }
     }
-    public void outputBarrierState(){
+
+    public void outputBarrierState() {
         System.out.println(diplomatsBarrier.toString() + " state: " + diplomatsBarrier.getState());
     }
 }

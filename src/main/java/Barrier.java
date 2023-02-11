@@ -1,16 +1,16 @@
 public class Barrier {
 
-	private State state;
+    private State state;
 
-	public State getState() {
-		return state;
-	}
+    public State getState() {
+        return state;
+    }
 
-	public void open() {
-		state = State.OPEN;
-	}
+    public void open() {
+        state = State.OPEN;
+    }
 
-	public void close() {
-		state = State.CLOSED;
-	}
+    public void close() {
+        state = State.CLOSED;
+    }
 }
