@@ -1,3 +1,4 @@
+import B066.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -25,9 +26,9 @@ public class PatternTesting {
     public void checkChainOfResponsibility() {
         //check can handle Method:
         assertTrue(diplomatsTrack.canHandleVehicle(null, "test"));
-        assertTrue(diplomatsTrack.canHandleVehicle(dv1, "class DiplomatsVehicle"));
-        assertTrue(diplomatsTrack.canHandleVehicle(mv1, "class MilitaryVehicle"));
-        assertTrue(diplomatsTrack.canHandleVehicle(c1, "class Car"));
+        assertTrue(diplomatsTrack.canHandleVehicle(dv1, "class B066.DiplomatsVehicle"));
+        assertTrue(diplomatsTrack.canHandleVehicle(mv1, "class B066.MilitaryVehicle"));
+        assertTrue(diplomatsTrack.canHandleVehicle(c1, "class B066.Car"));
         assertFalse(diplomatsTrack.canHandleVehicle(dv1, "sedfgerzh"));
     }//end method
 

@@ -1,3 +1,5 @@
+package B066;
+
 public class Transmitter {
 
     private ICommand command;
@@ -7,7 +9,7 @@ public class Transmitter {
     }
 
     public void pressButton() {
-        System.out.println("Transmitter Button has been pressed!");
+        System.out.println("B066.Transmitter Button has been pressed!");
         command.execute();
     }
 }

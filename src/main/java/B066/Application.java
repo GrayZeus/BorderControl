@@ -1,3 +1,5 @@
+package B066;
+
 public class Application {
 
     public static void main(String... args) {
@@ -8,6 +10,7 @@ public class Application {
         Track carTrack = new NormalTrack();
         Track militaryTrack = new MilitaryTrack(carTrack);
         Track diplomatsTrack = new DiplomatsTrack(militaryTrack);
+
 
         diplomatsTrack.passBorder(dv1);
         diplomatsTrack.passBorder(mv1);

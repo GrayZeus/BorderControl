@@ -1,3 +1,5 @@
+package B066;
+
 public class Barrier {
 
     private State state;

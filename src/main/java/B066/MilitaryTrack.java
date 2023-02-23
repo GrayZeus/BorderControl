@@ -1,3 +1,5 @@
+package B066;
+
 public class MilitaryTrack extends Track {
 
     Transmitter control = new Transmitter();
@@ -11,12 +13,13 @@ public class MilitaryTrack extends Track {
     }
 
     public void passBorder(Vehicle vehicle) {
-        //System.out.println("Military Track Class: " + vehicle.getClass().toString());
-        if (canHandleVehicle(vehicle, "class MilitaryVehicle")) {
+        //System.out.println("Military B066.Track Class: " + vehicle.getClass().toString());
+        if (canHandleVehicle(vehicle, "class B066.MilitaryVehicle")) {
             control.setCommand(barrierOpen);
             control.pressButton();
             outputBarrierState();
-            System.out.println("MilitaryTrack: Vehicle passed");
+            vehicle.setPassedBorderToTrue();
+            System.out.println("B066.MilitaryTrack: B066.Vehicle passed");
             control.setCommand(barrierClose);
             control.pressButton();
             outputBarrierState();

@@ -1,3 +1,5 @@
+package B066;
+
 public class OpenBarrierCommand implements ICommand {
 
     private final Barrier barrier;
