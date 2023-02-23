@@ -2,7 +2,7 @@ package B066;
 
 public abstract class Vehicle {
 
-    boolean passedBorder;
+    private boolean passedBorder;
 
     public void setPassedBorderToTrue() {
         this.passedBorder = true;
