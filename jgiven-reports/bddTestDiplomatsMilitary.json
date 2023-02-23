@@ -1,0 +1,87 @@
+{
+  "className": "bddTestDiplomatsMilitary",
+  "name": "bdd Test Diplomats Military",
+  "scenarios": [
+    {
+      "className": "bddTestDiplomatsMilitary",
+      "testMethodName": "passBorder",
+      "description": "Pass border",
+      "tagIds": [
+        "Story-border control | pass border"
+      ],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "get initialized vehicle",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "get initialized vehicle"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 4672500,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "pass border",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "pass border"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 7845200,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "assert vehicle state is correct",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "assert vehicle state is correct"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 44769200,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 88257000
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 88257000
+    }
+  ],
+  "tagMap": {
+    "Story-border control | pass border": {
+      "fullType": "Story",
+      "type": "Story",
+      "value": "border control | pass border",
+      "description": "",
+      "prependType": true,
+      "href": ""
+    }
+  }
+}
